@@ -1,0 +1,14 @@
+esempio di chiamate a random quantum random number server.
+- ANURandom.py: la classe che contiene i metodi per chiamare il servizio web
+  attenzione: se la pagina html cambia potrebbe essere necessario modificare il metodo per prendere i char direttamente dall html
+  
+- main.py: interfaccia grafica che richiama il servizio ANU quatum .... , e non solo
+
+- test.py: semplice chiamata al metodo presente nella classa ANURandom.py
+  serve appunto per testare la chiamate alla classe ANU e capire se riesco a tirar giù le stringhe
+  
+  
+  
+installer creato con
+pyinstaller -n RandomString -w -i "icona.ico" main.py
+e copiare il file "icona.ico" dentro la cartella dist/Randomstring
