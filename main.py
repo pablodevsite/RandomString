@@ -30,9 +30,9 @@ class App:
 		self.add_controlli(master, frame)
 	
 	def add_controlli(self, master, frame):
-		Label(frame, text="Dizionario").grid(row=0, sticky=W, padx=5, pady=5)
-		Label(frame, text="Num Caratteri").grid(row=1, sticky=W, padx=5, pady=5)
-		Label(frame, text="Stringa Casuale").grid(row=2, sticky=W+N, padx=5, pady=5)
+		Label(frame, text="Dictionary").grid(row=0, sticky=W, padx=5, pady=5)
+		Label(frame, text="Num Characters").grid(row=1, sticky=W, padx=5, pady=5)
+		Label(frame, text="Result").grid(row=2, sticky=W+N, padx=5, pady=5)
 
 		
 		self.e1 = Entry(frame)
@@ -52,10 +52,10 @@ class App:
 		self.e3.bind("<Control-Key-C>", self.copy_all2) # just in case caps lock is on
 		
 		
-		Button(frame, text="Esci",            command=master.quit).grid(row=3, column=1, padx=5, pady=5, sticky=W+E+S)
-		Button(frame, text="Calcola Stringa", command=self.calcola_stringa).grid(row=3, column=2, padx=5, pady=5, sticky=W+E+S)
+		Button(frame, text="Exit",            command=master.quit).grid(row=3, column=1, padx=5, pady=5, sticky=W+E+S)
+		Button(frame, text="Random String", command=self.calcola_stringa).grid(row=3, column=2, padx=5, pady=5, sticky=W+E+S)
 		Button(frame, text="ANU Quantum RG",  command=self.chiama_anu_quantum).grid(row=3, column=3, padx=5, pady=5, sticky=W+E+S)
-		Button(frame, text="WP salt",         command=self.chiama_wp_salt).grid(row=3, column=4, padx=5, pady=5, sticky=W+E+S)
+		Button(frame, text="Wordpress salt",         command=self.chiama_wp_salt).grid(row=3, column=4, padx=5, pady=5, sticky=W+E+S)
 		
 		""" ************************************************
 		**** parte che non utlizza la grid ma il pack ******
