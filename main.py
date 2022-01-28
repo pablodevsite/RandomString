@@ -4,6 +4,7 @@ import random
 import ANURandom
 import urllib.request
 import re
+import utility
 from tkinter.scrolledtext import ScrolledText
 
 class App:
@@ -11,10 +12,9 @@ class App:
 		self.master = master
 		self.config_windows(master)
 
-		#set title
+        #set title
 		self.master.title("Random String")
-
-		self.master.iconbitmap("icona.ico")
+		self.master.iconbitmap(utility.getScriptDirectory() + "\\icona.ico")
 
 		frame=Frame(master) #frame=Frame(master, bg="blue")
 		frame.grid(row=0, column=0, sticky=N+S+E+W)
